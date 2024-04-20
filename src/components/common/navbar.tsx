@@ -3,6 +3,7 @@
 import useScroll from "@/hooks/useScroll"
 import { cn } from "@/lib/tailwind-utils"
 import { Menu } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
 import { Button } from "../ui/button"
@@ -15,15 +16,15 @@ const navLink = [
   },
   {
     name: "About Us",
-    href: "#about-me",
-  },
-  {
-    name: "Furniture",
-    href: "#furniture",
+    href: "#about",
   },
   {
     name: "Best Seller",
     href: "#best-seller",
+  },
+  {
+    name: "Furniture",
+    href: "#furniture",
   },
   {
     name: "Contact",
@@ -85,7 +86,7 @@ const Navbar = () => {
       })}>
       <SectionWrapper className="flex justify-between text-white  items-center h-[70px]">
         <Link href={"/"} className="text-text24_30 font-semibold">
-          SerenityFu
+          <Image alt="" src={"/images/logo.png"} width={60} height={20} />
         </Link>
         <DesktopNavLink />
         <MobileNavLink />

@@ -1,3 +1,5 @@
+import AboutUs from "@/components/home/about-us"
+import BestSeller from "@/components/home/best-seller"
 import Hero from "@/components/home/hero"
 import { type Metadata } from "next"
 
@@ -7,41 +9,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="mb-[1000px]">
       <Hero />
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        doloribus libero illo officia atque quaerat? Assumenda laborum vero ipsa
-        aspernatur autem modi veritatis, ex est deserunt a veniam animi. Optio!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        doloribus libero illo officia atque quaerat? Assumenda laborum vero ipsa
-        aspernatur autem modi veritatis, ex est deserunt a veniam animi. Optio!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        doloribus libero illo officia atque quaerat? Assumenda laborum vero ipsa
-        aspernatur autem modi veritatis, ex est deserunt a veniam animi. Optio!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        doloribus libero illo officia atque quaerat? Assumenda laborum vero ipsa
-        aspernatur autem modi veritatis, ex est deserunt a veniam animi. Optio!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-        doloribus libero illo officia atque quaerat? Assumenda laborum vero ipsa
-        aspernatur autem modi veritatis, ex est deserunt a veniam animi. Optio!
-      </div>
-      <div className="h-screen">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quam
-        delectus perspiciatis tempore doloremque modi enim velit placeat
-        repudiandae accusantium labore exercitationem sapiente, culpa dolores
-        quaerat amet distinctio quidem impedit. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Tenetur quam delectus perspiciatis tempore
-        doloremque modi enim velit placeat repudiandae accusantium labore
-        exercitationem sapiente, culpa dolores quaerat amet distinctio quidem
-        impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Tenetur quam delectus perspiciatis tempore doloremque modi enim velit
-        placeat repudiandae accusantium labore exercitationem sapiente, culpa
-        dolores quaerat amet distinctio quidem impedit. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Tenetur quam delectus perspiciatis
-        tempore doloremque modi enim velit placeat repudiandae accusantium
-        labore exercitationem sapiente, culpa dolores quaerat amet distinctio
-        quidem impedit.
+      <div className="md:mt-[160px] mt-[360px] md:space-y-[120px] space-y-[64px]">
+        <AboutUs />
+        <BestSeller />
       </div>
     </div>
   )
