@@ -52,7 +52,9 @@ const BestSeller = () => {
           onMouseLeave={plugin.current.reset}>
           <CarouselContent>
             {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem
+                key={index + 1}
+                className="md:basis-1/2 lg:basis-1/3">
                 <Card className="h-[400px] w-full">
                   <CardContent className=" p-2 h-full  flex flex-col  ">
                     <div className="relative w-full h-[60%] ">

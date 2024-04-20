@@ -9,7 +9,7 @@ import { useState } from "react"
 import { Button } from "../ui/button"
 import SectionWrapper from "./section-wrapper"
 
-const navLink = [
+export const navLink = [
   {
     name: "Home",
     href: "/",
@@ -60,7 +60,7 @@ const MobileNavLink = () => {
         <Menu className="h-5 w-5" />
       </Button>
       {isShowMobileNavLink && (
-        <div className="fixed px-[20px] z-20 bg-background gap-y-3 py-3  border-b top-[70px] right-0 flex flex-col items-center  left-0 w-screen">
+        <div className="fixed px-[20px] z-20 bg-color-1 text-white gap-y-3 py-3  border-b top-[70px] right-0 flex flex-col items-center  left-0 w-screen">
           {navLink.map((link, index) => (
             <Link
               onClick={() => setIsShowMobileNavLink(false)}
