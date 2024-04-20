@@ -4,8 +4,10 @@ import SectionWrapper from "../common/section-wrapper"
 import { Button } from "../ui/button"
 
 const HeroImage = () => {
+  //h-[calc(100vh_-_80px)]
+
   return (
-    <div className="relative h-[500px] sm:w-screen md:w-screen md:h-[calc(100vh_-_80px)] brightness-75">
+    <div className="relative h-[540px] sm:w-screen md:w-screen  brightness-75">
       <Image
         className="object-cover object-right md:object-center"
         alt=""
@@ -19,7 +21,7 @@ const HeroImage = () => {
 const HeroTitle = () => {
   return (
     <div className="absolute text-white top-[50%] translate-y-[-50%]  left-[50%] translate-x-[-50%] w-max">
-      <div className="flex flex-col gap-y-[40px] justify-center items-center max-w-[400px] sm:max-w-[600px] md:max-w-[800px]">
+      <div className="flex flex-col gap-y-[40px] justify-center items-center max-w-[380px] sm:max-w-[600px] md:max-w-[800px]">
         <div className="md:space-y-[20px] space-y-[14px]">
           <h1 className="font-bold  md:text-text48_60 text-center sm:text-text36_48 text-text24_30">
             Crafting Comfort <br /> Where Style Meets Serenity
@@ -45,8 +47,8 @@ const HeroTitle = () => {
 
 const HeroInfo = () => {
   return (
-    <SectionWrapper className="absolute md:-bottom-16 -bottom-[300px]  h-max left-[50%] translate-x-[-50%] ">
-      <div className="md:h-[130px] w-full h-auto rounded-[20px] bg-color-1 text-white grid grid-cols-1  md:grid-cols-3 items-center justify-between gap-4 px-[100px] md:py-0 py-5">
+    <SectionWrapper className="absolute md:-bottom-16 -bottom-[300px] md:flex-none flex justify-center items-center  h-max left-[50%] translate-x-[-50%] ">
+      <div className="md:h-[130px] max-w-[360px] md:max-w-full w-full h-auto rounded-[20px] bg-color-1 text-white grid grid-cols-1  md:grid-cols-3 items-center justify-between gap-4 px-[100px] md:py-0 py-5">
         <div className="  flex flex-col gap-y-2 md:border-l items-center  min-w-min-content ">
           <h1 className="text-text48_48 font-semibold">80</h1>
           <p className="text-center text-sm">
